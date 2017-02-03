@@ -8,10 +8,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "azure-sb": "^0.10.4",
-    "body-parser": "^1.16.0",
-    "documentdb": "^1.10.2",
-    "express": "^4.14.1"
+    // "azure-sb": "^0.10.4",
+    // "body-parser": "^1.16.0",
+    // "documentdb": "^1.10.2",
+    // "express": "^4.14.1"
   },
   "devDependencies": {},
   "description": ""
