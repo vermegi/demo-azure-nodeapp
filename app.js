@@ -1,10 +1,10 @@
 'use strict';
 
-const app = require('express')();
+var app = require('express')();
 var bodyParser = require('body-parser');
 
-const getRoutes = require('./routes/get.js');
-const postRoutes = require('./routes/post.js');
+var getRoutes = require('./routes/get.js');
+var postRoutes = require('./routes/post.js');
 
 var port = process.argv[2] || process.env.port || 9100;
 

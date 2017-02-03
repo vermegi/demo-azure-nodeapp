@@ -1,6 +1,6 @@
 'use strict';
 
-const routes = require('express').Router();
+var routes = require('express').Router();
 var DocumentClient = require('documentdb').DocumentClient;
 
 var host = process.env.documentDBEndpoint;

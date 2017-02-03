@@ -1,7 +1,7 @@
 'use strict';
 
 // var azureSb = require('azure-sb');
-const routes = require('express').Router();
+var routes = require('express').Router();
 
 // var connectionString = process.env.sbConnectionstring;
 // var queueSvc = azureSb.createServiceBusService(connectionString);
