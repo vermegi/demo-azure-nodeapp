@@ -10,7 +10,7 @@ var collectionUrl = process.env.documentDBCollectionUrl;
 
 routes.get('/', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    result.status(200).json('{"it": "works"}');
+    res.status(200).json('{"it": "works"}');
 });
 
 routes.get('/booking', (req, res) => {
