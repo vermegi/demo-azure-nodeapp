@@ -8,10 +8,10 @@ var masterKey = process.env.documentDBSecret;
 var collectionUrl = process.env.documentDBCollectionUrl;
 
 
-routes.get('/', (req, res) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json('{"it": "works"}');
-});
+// routes.get('/', (req, res) => {
+//     res.setHeader('Content-Type', 'application/json');
+//     res.status(200).json('{"it": "works"}');
+// });
 
 routes.get('/booking', (req, res) => {
 
