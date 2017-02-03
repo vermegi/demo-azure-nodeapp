@@ -3,7 +3,7 @@
 var azureSb = require('azure-sb');
 const routes = require('express').Router();
 
-var connectionString = process.env.APPSETTING_SbConnectionstring;
+var connectionString = process.env.sbConnectionstring;
 var queueSvc = azureSb.createServiceBusService(connectionString);
 
 routes.post('/booking', function (req, res) {

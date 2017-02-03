@@ -3,9 +3,9 @@
 const routes = require('express').Router();
 var DocumentClient = require('documentdb').DocumentClient;
 
-var host = process.env.APPSETTING_DocumentDBEndpoint;
-var masterKey = process.env.APPSETTING_DocumentDBSecret;
-var collectionUrl = process.env.APPSETTING_DocumentDBCollectionUrl;
+var host = process.env.documentDBEndpoint;
+var masterKey = process.env.documentDBSecret;
+var collectionUrl = process.env.documentDBCollectionUrl;
 
 
 routes.get('/booking', (req, res) => {
