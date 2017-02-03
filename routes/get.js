@@ -8,8 +8,13 @@ var masterKey = process.env.documentDBSecret;
 var collectionUrl = process.env.documentDBCollectionUrl;
 
 
+routes.get('/', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    result.status(200).json('{"it": "works"}');
+});
+
 routes.get('/booking', (req, res) => {
-    
+
     var client = new DocumentClient(host, { masterKey: masterKey });
     return new Promise((resolve, reject) => {
         client.queryDocuments(collectionUrl, 'SELECT * FROM sbmessages')
