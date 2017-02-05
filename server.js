@@ -3,7 +3,7 @@
 var app = require('express')();
 var bodyParser = require('body-parser');
 
-// var getRoutes = require('./routes/get.js');
+var getRoutes = require('./routes/get.js');
 // var postRoutes = require('./routes/post.js');
 
 var port = process.argv[2] || process.env.port || 9100;
@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
- app.use('/', getRoutes);
+app.use('/', getRoutes);
 // app.use('/', postRoutes);
 
 app.listen(port, () => {
